@@ -1,6 +1,6 @@
 var scene = new THREE.Scene();
 document.addEventListener( 'mousemove', onMouseMove, false );
-var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+var camera = new THREE.PerspectiveCamera( 15, window.innerWidth/window.innerHeight, 0.1, 1000 );
 var mouseX;
 var mouseY;
 
@@ -31,7 +31,7 @@ for (var i = 0; i < 1600; i++) {
 
   geometry.vertices.push(vertex);
 }
-var particles = new THREE.Points(geometry, new THREE.PointsMaterial({color: 0xff44ff, size: 2}));
+var particles = new THREE.Points(geometry, new THREE.PointsMaterial({color: 0x0066ff, size: 2}));
 particles.boundingSphere = 50;
 
 
